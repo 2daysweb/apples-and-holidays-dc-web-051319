@@ -103,7 +103,7 @@ def all_holidays_with_bbq(holiday_hash)
     data.collect do |holiday_key, supply_array|
       if (supply_array.include?("BBQ") && bbq_holidays.include?(holiday_key) == false)
         bbq_holidays.push(holiday_key)
-        bbq_holidays.flatten.compact
+        bbq_holidays.flatten
       end
      bbq_holidays
     end
