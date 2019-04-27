@@ -106,6 +106,8 @@ def all_holidays_with_bbq(holiday_hash)
       end
       bbq_holidays.flatten
       bbq_holidays.reject {|e| e.to_s.empty?} 
+      bbq_holidays.flatten
+      bbq_holidays.flatten
     end
   end
 end
