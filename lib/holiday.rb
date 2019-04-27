@@ -107,7 +107,7 @@ def all_holidays_with_bbq(holiday_hash)
       end
   end
   bbq_holidays.collect do |array|
-       array.reject {|array| array.empty? || array[0]==[]}
+       array.reject {|array| array.empty?}
     end
 end
 
