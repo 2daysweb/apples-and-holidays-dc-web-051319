@@ -107,7 +107,7 @@ def all_holidays_with_bbq(holiday_hash)
       end
   end
   bbq_holidays.collect do |array|
-       delete_if do |array|
+       keep_if do |array|
          
          
          
