@@ -113,11 +113,14 @@ def all_holidays_with_bbq(holiday_hash)
        else
          array.to_s.empty?
     end
+    
+    
        }
+       
+         return bbq_holidays_flattened
   end
     
-  
-  return bbq_holidays_flattened
+
   
 end
 
