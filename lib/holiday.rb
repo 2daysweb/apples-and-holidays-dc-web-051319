@@ -114,6 +114,9 @@ def all_holidays_with_bbq(holiday_hash)
          array.to_s.empty?
     end
   end
+  
+  return bbq_holidays_flattened
+  
 end
 
   end 
