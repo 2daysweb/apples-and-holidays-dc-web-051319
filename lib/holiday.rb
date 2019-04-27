@@ -99,14 +99,13 @@ def all_holidays_with_bbq(holiday_hash)
   
   
   holiday_hash.collect do |season_key, data|
-    bbq_holidays = [] 
+    bbq_holidays = []
+    bbq_holidays_flattened = []
     data.collect do |holiday_key, supply_array|
       if (supply_array.include?("BBQ") && bbq_holidays.include?(holiday_key) == false)
         bbq_holidays.push(holiday_key)
       end
-     bbq_holidays.flatten
-     bbq_holidays.flatten
-     bbq_holidays.flatten
+     bbq_holidays.each do |element, 
     end
   end
 end
