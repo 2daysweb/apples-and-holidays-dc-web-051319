@@ -105,13 +105,13 @@ def all_holidays_with_bbq(holiday_hash)
         bbq_holidays << holiday_key
       end
   end
-  bbq_holidays.collect do |array|
+=begin bbq_holidays.collect do |array|
        keep_if do |array|
          array.include?(Symbol)
     end
   end
-         
+=end         
          return bbq_holidays
-         end
-         end
+       end
+    end
          
