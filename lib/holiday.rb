@@ -108,7 +108,7 @@ def all_holidays_with_bbq(holiday_hash)
   end
   bbq_holidays.collect do |array|
        array.reject {|array| 
-       if(array.is_a(Symbol)
+       if(array.is_a(Symbol))
          bbq_holidays_flattened.push(array)
        else
          array.to_s.empty?
